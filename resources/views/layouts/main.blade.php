@@ -32,14 +32,14 @@
         <a href="/contact" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
     </nav>
 
-    {{-- CONTENIDO DE CADA SECCIÓN --}}
+    {{-- CONTENIDO --}}
     <div style="padding: 20px;">
         @yield('content')
     </div>
 
     {{-- FOOTER --}}
     <footer>
-        Activity 11 - Created by YOUR_NAME_HERE
+        Activity 11 - Created by Abraham 
     </footer>
 
 </body>

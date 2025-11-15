@@ -2,5 +2,5 @@
 
 @section('content')
 <h1>Photos Section</h1>
-<p>Here are some sample photos (imaginary).</p>
+<p>Here you can display your gallery photos.</p>
 @endsection

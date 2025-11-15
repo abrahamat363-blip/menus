@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>Contact Section</h1>
-<p>Contact information goes here.</p>
+<h1>Contact Page</h1>
+<p>If you want to reach us, send a message!</p>
 @endsection
