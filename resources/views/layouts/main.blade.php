@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,8 +43,54 @@
 
     <footer class="text-center py-3 mt-4 bg-light">
         <strong>Activity 11 & 9 — Created by MARTIN ALVAREZ.</strong>
+=======
+<html>
+<head>
+    <title>Menus Activity</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; }
+        nav { background: #333; padding: 15px; }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        nav a.active {
+            font-weight: bold;
+            color: yellow;
+        }
+        footer {
+            background: #222;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    {{-- MENU --}}
+    <nav>
+        <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
+        <a href="/photos" class="{{ request()->is('photos') ? 'active' : '' }}">Photos</a>
+        <a href="/contact" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
+    </nav>
+
+    {{-- CONTENIDO --}}
+    <div style="padding: 20px;">
+        @yield('content')
+    </div>
+
+    {{-- FOOTER --}}
+    <footer>
+        Activity 11 - Created by Abraham 
+>>>>>>> d2e81559bed91cfa69aa5464e60e1f2dd25bebf8
     </footer>
 
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d2e81559bed91cfa69aa5464e60e1f2dd25bebf8

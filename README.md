@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -59,3 +60,35 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Menus Activity – Laravel Blade Template System
+
+This project was developed as part of **Activity 11**, where the objective is to understand and apply Laravel’s Blade template inheritance system.
+
+## 🎯 Objective
+Create a Laravel project with a primary view that contains a navigation menu and multiple secondary views that inherit from a main layout using Blade.
+
+---
+
+## 📌 Features Implemented
+
+### ✔ Primary View (Layout)
+A main layout (`main.blade.php`) containing:
+- Navigation menu
+- Blade `@yield()` section for each page
+- Footer visible in all sections
+
+### ✔ Secondary Views
+Three pages were created:
+- **Home**
+- **Photos**
+- **Contact**
+
+Each has unique content to clearly identify the section.
+
+### ✔ Active Menu Highlight
+The menu automatically highlights the selected section using Blade logic:
+
+```blade
+class="{{ request()->is('photos') ? 'active' : '' }}"
+>>>>>>> d2e81559bed91cfa69aa5464e60e1f2dd25bebf8

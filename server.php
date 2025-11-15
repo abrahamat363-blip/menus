@@ -8,7 +8,11 @@
  */
 
 $uri = urldecode(
+<<<<<<< HEAD
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
+=======
+    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? ''
+>>>>>>> d2e81559bed91cfa69aa5464e60e1f2dd25bebf8
 );
 
 // This file allows us to emulate Apache's "mod_rewrite" functionality from the
